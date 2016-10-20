@@ -61,7 +61,7 @@ html, body {
     background-image: url(/images/plane_window.jpeg);
   }
   &:nth-child(3) {
-    background-image: url(/images/coffee.jpg);
+    background-image: url(/images/mac-desk.jpeg);
   }
   &:nth-child(4) {
 	background-image: url(/images/black_white_desk.jpg);  
@@ -211,5 +211,24 @@ html, body {
       .content-wrapper {
         transform: translateY($parallax-offset / 2);
       }
+  }
+}
+
+// ------------- REGULAR VALUES ------------- //
+
+h1 {
+  font-family: "Lazer", sans-serif;
+}
+
+.content-subtitle {
+  line-height: 1.7em;
+}
+
+b {
+  font-style:italic;
+  color:#ddd;
+
+  &:hover {
+    cursor:pointer;
   }
 }
