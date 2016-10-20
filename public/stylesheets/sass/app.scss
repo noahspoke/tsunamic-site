@@ -218,15 +218,16 @@ html, body {
 
 h1 {
   font-family: "Lazer", sans-serif;
+  padding: 0 12px;
 }
 
 .content-subtitle {
   line-height: 1.7em;
 }
 
-b {
+b, a {
   font-style:italic;
-  color:#ddd;
+  text-decoration: underline;
 
   &:hover {
     cursor:pointer;
