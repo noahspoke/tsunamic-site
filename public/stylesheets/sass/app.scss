@@ -78,6 +78,7 @@ html, body {
 .content {
 
   &-wrapper {
+    position:relative;
 	  width: 90%;
 	  margin: 24px auto;
 	  text-align: center;
@@ -128,64 +129,6 @@ html, body {
   }
 }
 
-.top-line {
-	border-top: 1px solid #fff;
-}
-
-.bigger {
-	padding: 36px 0;
-	font-size: 44px;
-}
-
-.smaller {
-	font-size: 16px;
-	padding:0;
-	padding-top:36px;
-}
-
-.story {
-	text-align: left;
-
-	&-text {
-
-	}
-
-	a {
-		font-family: "Cardo";
-		color: $text-color;
-		padding: 0 16px;
-
-		&:visited {
-			color:$text-color;
-		}
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.content {
-		&-wrapper {
-
-			svg {
-				width:50px;
-			}
-		}
-
-		&-title {
-			font-size: 40px;
-		}
-	}
-
-	.bigger {
-		padding: 16px 0;
-		font-size: 24px;
-	}
-
-	.smaller {
-		padding:0;
-		padding-top:16px;
-	}
-}
-
 // ------------- SET TRANSFORM VALUES ------------- //
 
 .background.up-scroll {
@@ -225,11 +168,83 @@ h1 {
   line-height: 1.7em;
 }
 
+.lazer-link {
+  font-family:"Lazer";
+  text-decoration: none;
+}
+
 b, a {
   font-style:italic;
   text-decoration: underline;
 
   &:hover {
     cursor:pointer;
+  }
+}
+
+i {
+  display: block;
+}
+
+.top-line {
+  border-top: 1px solid #fff;
+}
+
+.bigger {
+  padding: 36px 0;
+  font-size: 44px;
+}
+
+.smaller {
+  font-size: 16px;
+  padding:0;
+  padding-top:36px;
+}
+
+.story {
+  text-align: left;
+
+  &-text {
+
+  }
+
+  a {
+    font-family: "Cardo";
+    color: $text-color;
+    padding: 0 16px;
+
+    &:visited {
+      color:$text-color;
+    }
+  }
+
+  .lazer-link {
+    font-family:"Lazer";
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    &-wrapper {
+
+      svg {
+        width:50px;
+      }
+    }
+
+    &-title {
+      font-size: 40px;
+    }
+  }
+
+  .bigger {
+    padding: 16px 0;
+    font-size: 24px;
+  }
+
+  .smaller {
+    padding:0;
+    padding-top:16px;
   }
 }
