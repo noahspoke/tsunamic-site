@@ -173,6 +173,10 @@ h1 {
   text-decoration: none;
 }
 
+b {
+  display:block;
+}
+
 b, a {
   font-style:italic;
   text-decoration: underline;
@@ -219,10 +223,27 @@ i {
     }
   }
 
+  p {
+    a{
+      padding:0 4px;
+    }
+  }
+
   .lazer-link {
     font-family:"Lazer";
   }
 
+  .blocker {
+    display:block;
+    padding-top:16px;
+  }
+
+}
+
+.social {
+  display:block;
+  margin: 0 0 16px 0;
+  text-align:center;
 }
 
 @media screen and (max-width: 768px) {
@@ -247,5 +268,18 @@ i {
   .smaller {
     padding:0;
     padding-top:16px;
+  }
+
+  #act-2-main {
+    padding-bottom: 0;
+  }
+
+  #act-2-step {
+    padding: 8px 12px;
+    margin:16px 0 0 0;
+  }
+
+  #act-2-step-content {
+    padding: 0 16px;
   }
 }

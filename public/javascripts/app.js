@@ -17,6 +17,36 @@ var slideDurationSetting = 600; //Amount of time for which slide is "locked"
 var currentSlideNumber = 0;
 var totalSlideNumber = $(".background").length;
 
+$(function() {
+  var step_text = ["Do you need a kick ass website?",
+                  "We can design the site for you too.",
+                  "Awesome! Tell us about your brand and we'll build your design.",
+                  ];
+
+  var link_text = ["Why yes, I do.",
+                  "Sure, you guys design.",
+                  "Shoot us a message."];
+  var step = 1;
+  $(".step-clicker").click(function() {
+    step += 1;
+
+    if (step - 1  < step_text.length) {
+      $("#act-2-step-content").text(step_text[step - 1]);
+      $("#act-2-step").text("Step "+step + "/ 3");
+      $(this).text(link_text[step - 1]);
+    }
+
+    if (step == 2) {
+      $("#step-story").append("<a href='https://github.com' class='blocker bigger' id='github-link'>No, I'll design.</a>");
+    }
+    else {
+      $("#github-link").remove();
+    }
+  });
+
+
+});
+
 // ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
 function wheelScroll(evt) {
   if (isFirefox) {
