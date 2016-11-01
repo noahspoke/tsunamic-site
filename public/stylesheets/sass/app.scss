@@ -1,6 +1,12 @@
 @font-face {
 	font-family: "Cardo";
-	src: url("/fonts/Oranienbaum.ttf") format("truetype");
+	src: url("/fonts/LinLibertine_Rah.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cardo";
+  src: url("/fonts/LinLibertine_RBIah.ttf") format("truetype");
+  font-weight: bold;
 }
 
 @font-face {
@@ -48,7 +54,7 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,.6);
   }
   &:first-child {
     background-image: url(/images/fair.jpg);
@@ -174,12 +180,15 @@ h1 {
 }
 
 b {
-  display:block;
+  display:inline;
+}
+
+a {
+  text-decoration: underline;
 }
 
 b, a {
   font-style:italic;
-  text-decoration: underline;
 
   &:hover {
     cursor:pointer;
@@ -215,7 +224,7 @@ i {
   a {
     font-family: "Cardo";
     color: $text-color;
-    padding: 0 16px;
+    padding: 0 0 16px 8px;
     font-weight: bold;
 
     &:visited {
@@ -225,7 +234,7 @@ i {
 
   p {
     a{
-      padding:0 4px;
+      padding:0;
     }
   }
 
@@ -235,7 +244,16 @@ i {
 
   .blocker {
     display:block;
-    padding-top:16px;
+  }
+
+  #act-2-step-main {
+    padding-bottom:0;
+    padding-top: 24px;
+  }
+
+  #act-2-step-content {
+    padding: 16px 0;
+    font-weight: bold;
   }
 
 }
@@ -268,18 +286,5 @@ i {
   .smaller {
     padding:0;
     padding-top:16px;
-  }
-
-  #act-2-main {
-    padding-bottom: 0;
-  }
-
-  #act-2-step {
-    padding: 8px 12px;
-    margin:16px 0 0 0;
-  }
-
-  #act-2-step-content {
-    padding: 0 16px;
   }
 }

@@ -32,7 +32,6 @@ $(function() {
 
     if (step - 1  < step_text.length) {
       $("#act-2-step-content").text(step_text[step - 1]);
-      $("#act-2-step").text("Step "+step + "/ 3");
       $(this).text(link_text[step - 1]);
     }
 
